@@ -30,7 +30,7 @@ body {
   background-position: center;
 }
 
-#weatherApp::before {
+#weatherApp::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -54,6 +54,7 @@ body {
   );
   box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.75);
   color: white;
+  z-index: 1;
 }
 
 #inputContainer {
@@ -64,7 +65,7 @@ body {
 
 #inputContainer input {
   width: 100%;
-  background: rgba(0, 0, 0, 0.15);
+  background: rgba(255, 255, 255, 0.15);
   border: 3px solid transparent;
   border-radius: 50px;
   padding: 10px 16px;

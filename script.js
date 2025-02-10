@@ -27,7 +27,6 @@ document.addEventListener("keypress", (event) => {
 async function displayAllInfo() {
   let cityName = cityInput.value;
   const weather = await getWeatherData(cityName);
-  console.log(weather);
 
   cityInput.value = "";
 
