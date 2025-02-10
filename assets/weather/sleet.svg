@@ -1,0 +1,114 @@
+<svg
+  version="1.1"
+  id="Layer_1"
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  x="0px"
+  y="0px"
+  viewBox="0 0 61.7 60.7"
+  style="enable-background: new 0 0 61.7 42.8"
+  xml:space="preserve"
+>
+  <g id="Cloud_3">
+    <g id="White_cloud_3">
+      <path
+        id="XMLID_24_"
+        class="white"
+        fill="#ffffff"
+        d="M47.2,42.8H7.9c-4.3,0-7.9-3.5-7.9-7.9l0,0C0,30.5,3.5,27,7.9,27h39.4c4.3,0,7.9,3.5,7.9,7.9v0C55.1,39.2,51.6,42.8,47.2,42.8z"
+      />
+      <circle id="XMLID_23_" class="white" fill="#ffffff" cx="17.4" cy="25.5" r="9.3" />
+      <circle id="XMLID_22_" class="white" fill="#ffffff" cx="34.5" cy="23.9" r="15.6" />
+    </g>
+    <g id="Gray_cloud_3">
+      <path
+        id="XMLID_20_"
+        class="gray"
+        fill="#e0e0e0"
+        d="M55.7,25.1H34.4c-3.3,0-6-2.7-6-6v0c0-3.3,2.7-6,6-6h21.3c3.3,0,6,2.7,6,6v0C61.7,22.4,59,25.1,55.7,25.1z"
+      />
+      <circle id="XMLID_19_" class="gray" fill="#e0e0e0" cx="46.7" cy="13.4" r="10.7" />
+    </g>
+  </g>
+
+  <!-- Raindrops / Sleet below the cloud -->
+  <g id="Rain_2">
+    <path
+      id="rain_2_left"
+      class="white"
+      fill="#87CEEB"
+      d="M17.5,49.5c0,0.9-0.8,1.6-1.6,1.6s-1.6-0.8-1.6-1.6c0-0.9,1.6-4.1,1.6-4.1S17.5,49.6,17.5,49.5z"
+    ></path>
+    <path
+      id="rain_2_mid"
+      class="white"
+      fill="#87CEEB"
+      d="M28.2,49.5c0,0.9-0.8,1.6-1.6,1.6s-1.6-0.8-1.6-1.6c0-0.9,1.6-4.1,1.6-4.1S28.2,49.6,28.2,49.5z"
+    ></path>
+    <path
+      id="rain_2_right"
+      class="white"
+      fill="#87CEEB"
+      d="M38.1,49.5c0,0.9-0.8,1.6-1.6,1.6s-1.6-0.8-1.6-1.6c0-0.9,1.6-4.1,1.6-4.1S38.1,49.6,38.1,49.5z"
+    ></path>
+    <animateTransform
+      attributeName="transform"
+      attributeType="XML"
+      dur="1s"
+      keyTimes="0;1"
+      repeatCount="indefinite"
+      type="translate"
+      values="0 0;0 6"
+      calcMode="linear"
+    ></animateTransform>
+    <animate
+      attributeType="CSS"
+      attributeName="opacity"
+      dur="1s"
+      keyTimes="0;1"
+      repeatCount="indefinite"
+      values="1;0"
+      calcMode="linear"
+    />
+  </g>
+
+  <!-- Snowflakes below the cloud -->
+  <g>
+    <circle class="white" fill="#b0c4de" cx="40" cy="49" r="2">
+      <animateTransform
+        attributeName="transform"
+        attributeType="XML"
+        dur="1.5s"
+        keyTimes="0;0.33;0.66;1"
+        repeatCount="indefinite"
+        type="translate"
+        values="1 -2;3 2; 1 4; 2 6"
+        calcMode="linear"
+      ></animateTransform>
+    </circle>
+    <circle class="white" fill="#b0c4de" cx="30" cy="49" r="2">
+      <animateTransform
+        attributeName="transform"
+        attributeType="XML"
+        dur="1.5s"
+        keyTimes="0;0.33;0.66;1"
+        repeatCount="indefinite"
+        type="translate"
+        values="1 -2;3 2; 1 4; 2 6"
+        calcMode="linear"
+      ></animateTransform>
+    </circle>
+    <circle class="white" fill="#b0c4de" cx="20" cy="49" r="2">
+      <animateTransform
+        attributeName="transform"
+        attributeType="XML"
+        dur="1.5s"
+        keyTimes="0;0.33;0.66;1"
+        repeatCount="indefinite"
+        type="translate"
+        values="1 -2;3 2; 1 4; 2 6"
+        calcMode="linear"
+      ></animateTransform>
+    </circle>
+  </g>
+</svg>

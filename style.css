@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  font-family: "Poppins", serif;
+  box-sizing: border-box;
+}
+
+*,
+body {
+  margin: 0;
+  padding: 0;
+  /* position: relative; */
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+}
+
+#weatherApp {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background-color: rgb(24, 24, 66); */
+  background-image: url("assets/background.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#weatherApp::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(5px);
+}
+
+#weatherAppWrapper {
+  width: 300px;
+  height: 530px;
+  padding: 20px;
+  font-weight: 600;
+  border-radius: 12px;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background: linear-gradient(
+    to top rgba(0, 0, 0, 0.15),
+    rgb(255, 255, 255, 0.15)
+  );
+  box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.75);
+  color: white;
+}
+
+#inputContainer {
+  width: 400px;
+  max-width: 100%;
+  position: relative;
+}
+
+#inputContainer input {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.15);
+  border: 3px solid transparent;
+  border-radius: 50px;
+  padding: 10px 16px;
+  padding-right: 45px;
+  outline: none;
+  font-weight: 500;
+  transition: 0.25s border;
+}
+
+#inputContainer input:focus {
+  border: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+#inputContainer input::placeholder {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+#inputContainer button {
+  height: 80%;
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 50%;
+  border: none;
+  aspect-ratio: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  transform: translateX(-10%);
+  top: 10%;
+  color: white;
+  cursor: pointer;
+}
+
+.weatherCard-text {
+  font-weight: 400;
+}
+
+#weatherCard #location {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 20px;
+}
+
+#weatherCondition {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#weather-img {
+  height: auto;
+  width: 50%;
+}
+
+#weatherCondition {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+#weather_info {
+  width: 50%;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 5px;
+}
+
+#aqi-info {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+#aqi-info h5 {
+  border: 1px solid;
+  border-radius: 20px;
+  width: 50%;
+  padding: 4px;
+  font-weight: 200;
+}
+
+#humidity_wind {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.humidity_wind_info {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.humidity_wind_info span {
+  font-size: 30px;
+}
+
+#forecast-container {
+  display: flex;
+  gap: 10px;
+  overflow: scroll;
+  padding-bottom: 12px;
+}
+
+#forecast-container::-webkit-scrollbar {
+  width: 100%;
+  height: 5px;
+}
+
+#forecast-container::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 99px;
+}
+
+#forecast-container::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 99px;
+  cursor: pointer;
+}
+
+.forecast-item {
+  min-width: 70px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  gap: 6px;
+  background: rgba(255, 255, 255, 0.1);
+  transition: 0.3s background;
+}
+
+.forecast-item:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+#forecast-img {
+  width: 35px;
+  height: 35px;
+}
+
+.section-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 15px;
+  margin-top: 25%;
+}
+
+.section-items img {
+  width: fit-content;
+  height: 180px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 450px) {
+  #weatherAppWrapper {
+    width: 300px;
+    height: 100%;
+    border-radius: 0;
+  }
+}

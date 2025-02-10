@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div id="weatherApp">
+      <div id="weatherAppWrapper">
+        <div id="inputContainer">
+          <input type="text" id="cityInput" placeholder="Enter city" />
+          <button id="getWeatherBtn">
+            <span class="material-symbols-outlined"> chevron_right </span>
+          </button>
+        </div>
+
+        <div id="weatherCard" style="display: none">
+          <div id="location">
+            <span class="material-symbols-outlined"> location_on </span>
+            <p id="cityName">city name</p>
+          </div>
+
+          <div id="weatherCondition">
+            <img src="assets/weather/cloudy_moon.svg" id="weather-img" />
+
+            <div id="weather_info">
+              <h2 class="weatherCard-text" id="temperature">30 °C</h2>
+              <p class="weatherCard-text" id="condition">condition</p>
+              <h5 class="weatherCard-text" id="min_max_temp">min/max</h5>
+            </div>
+          </div>
+
+          <div id="aqi-info">
+            <h5 id="aqi">Air quality - 50</h5>
+          </div>
+
+          <div id="humidity_wind">
+            <div class="humidity_wind_info">
+              <span class="material-symbols-outlined">
+                humidity_percentage
+              </span>
+              <div>
+                <h5 class="weatherCard-text">Humidity</h5>
+                <h5 class="weatherCard-text" id="humidity">20 %</h5>
+              </div>
+            </div>
+            <div class="humidity_wind_info">
+              <span class="material-symbols-outlined"> air </span>
+              <div>
+                <h5 class="weatherCard-text">Wind Speed</h5>
+                <h5 class="weatherCard-text" id="wind_speed">30 kph</h5>
+              </div>
+            </div>
+          </div>
+
+          <div id="forecast-container">
+            <div class="forecast-item" style="display: none">
+              <h5 class="weatherCard-text">1:00 PM</h5>
+              <img src="assets/weather/cloudy_moon.svg" id="forecast-img" />
+              <h5 class="weatherCard-text">30 °C</h5>
+            </div>
+          </div>
+        </div>
+
+        <section class="section-items" id="search-msg">
+          <img src="assets/message/search-city.png" id="section-img" />
+          <div>
+            <h1 class="weatherCard-text">Search City</h1>
+            <h4 class="weatherCard-text">to know weather info of the city</h4>
+          </div>
+        </section>
+
+        <section class="section-items" id="not-found-msg" style="display: none">
+          <img src="assets/message/404.png" id="section-img" />
+          <div>
+            <h1 class="weatherCard-text">Error</h1>
+            <h4 class="weatherCard-text">something went wrong</h4>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>

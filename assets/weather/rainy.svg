@@ -1,0 +1,78 @@
+<svg
+  version="1.1"
+  id="Layer_1"
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  x="0px"
+  y="0px"
+  viewBox="0 0 60.7 60.7"
+  style="enable-background: new 0 0 55.1 49.5"
+  xml:space="preserve"
+>
+  <g id="Cloud_2">
+    <g id="Rain_2">
+      <!-- Adjusted the raindrops to be centered with respect to the cloud -->
+      <path
+        id="rain_2_left"
+        class="white"
+        fill="#add8e6"
+        d="M17.5,42.5c0,0.9-0.8,1.6-1.6,1.6s-1.6-0.8-1.6-1.6c0-0.9,1.6-4.1,1.6-4.1 S17.5,41.6,17.5,42.5z"
+      ></path>
+      <path
+        id="rain_2_mid"
+        class="white"
+        fill="#add8e6"
+        d="M28.2,42.5c0,0.9-0.8,1.6-1.6,1.6s-1.6-0.8-1.6-1.6c0-0.9,1.6-4.1,1.6-4.1 S28.2,41.6,28.2,42.5z"
+      ></path>
+      <path
+        id="rain_2_right"
+        class="white"
+        fill="#add8e6"
+        d="M38.1,42.5c0,0.9-0.8,1.6-1.6,1.6s-1.6-0.8-1.6-1.6c0-0.9,1.6-4.1,1.6-4.1 S38.1,41.6,38.1,42.5z"
+      ></path>
+      <animateTransform
+        attributeName="transform"
+        attributeType="XML"
+        dur="1s"
+        keyTimes="0;1"
+        repeatCount="indefinite"
+        type="translate"
+        values="0 0;0 6"
+        calcMode="linear"
+      ></animateTransform>
+      <animate
+        attributeType="CSS"
+        attributeName="opacity"
+        dur="1s"
+        keyTimes="0;1"
+        repeatCount="indefinite"
+        values="1;0"
+        calcMode="linear"
+      />
+    </g>
+    <g id="White_cloud_2">
+      <path
+        id="XMLID_14_"
+        class="white"
+        fill="#ffffff"
+        d="M47.2,34.5H7.9c-4.3,0-7.9-3.5-7.9-7.9l0,0c0-4.3,3.5-7.9,7.9-7.9h39.4c4.3,0,7.9,3.5,7.9,7.9 v0C55.1,30.9,51.6,34.5,47.2,34.5z"
+      />
+      <circle
+        id="XMLID_13_"
+        class="white"
+        fill="#ffffff"
+        cx="17.4"
+        cy="17.3"
+        r="9.3"
+      />
+      <circle
+        id="XMLID_10_"
+        class="white"
+        fill="#ffffff"
+        cx="34.5"
+        cy="15.6"
+        r="15.6"
+      />
+    </g>
+  </g>
+</svg>

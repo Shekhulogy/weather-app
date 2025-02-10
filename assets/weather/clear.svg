@@ -1,0 +1,52 @@
+<svg
+  class="svg"
+  version="1.1"
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  viewBox="0 0 60.7 60.7"
+  xml:space="preserve"
+>
+  <!-- Stars -->
+  <circle class="star" cx="42" cy="15" r="1" fill="#ffeb3b">
+    <animate
+      attributeType="CSS"
+      attributeName="opacity"
+      dur="1.5s"
+      keyTimes="0;0.5;1"
+      repeatCount="indefinite"
+      values="1;0.5;1"
+      calcMode="linear"
+    />
+  </circle>
+  <circle class="star" cx="42" cy="25" r="1" fill="#ffeb3b">
+    <animate
+      attributeType="CSS"
+      attributeName="opacity"
+      dur="1.8s"
+      keyTimes="0;0.5;1"
+      repeatCount="indefinite"
+      values="1;0.4;1"
+      calcMode="linear"
+    />
+  </circle>
+  <circle class="star" cx="32" cy="15" r="1" fill="#ffeb3b">
+    <animate
+      attributeType="CSS"
+      attributeName="opacity"
+      dur="1.2s"
+      keyTimes="0;0.5;1"
+      repeatCount="indefinite"
+      values="1;0.6;1"
+      calcMode="linear"
+    />
+  </circle>
+
+  <!-- Moon -->
+  <path
+    id="Moon"
+    class="yellow"
+    fill="#ffeb3b"
+    d="M15.3,21.4C15,12.1,21.1,4.2,29.7,1.7c-2.8-1.2-5.8-1.8-9.1-1.7C8.9,0.4-0.3,10.1,0,21.9 c0.3,11.7,10.1,20.9,21.9,20.6c3.2-0.1,6.3-0.9,8.9-2.3C22.2,38.3,15.6,30.7,15.3,21.4z"
+    transform="translate(15, 9) scale(0.8) rotate(-45 22.5 22.5)"
+  />
+</svg>
