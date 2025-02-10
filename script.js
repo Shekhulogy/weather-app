@@ -6,7 +6,7 @@ let condition = document.getElementById("condition");
 let getWeatherData = async (cityName) => {
   try {
     const forecast =
-      await fetch(`http://api.weatherapi.com/v1/forecast.json?key=c5eb58feb5fe4ab8984144020252201&q=${cityName}&aqi=yes
+      await fetch(`https://api.weatherapi.com/v1/forecast.json?key=c5eb58feb5fe4ab8984144020252201&q=${cityName}&aqi=yes
   `).then((response) => response.json());
     return forecast;
   } catch {
